@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "icon": "assets/sleeptogether/icon.png",
-  "environment": "*",
+  "environment": "server",
   "entrypoints": {
     "main": [
       "club.zastix.sleeptogether.Sleeptogether"
