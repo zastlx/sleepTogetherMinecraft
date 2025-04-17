@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "club.zastix.sleeptogether.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BedBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

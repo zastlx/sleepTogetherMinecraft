@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "sleeptogether",
+  "version": "${version}",
+  "name": "Sleep Together",
+  "description": "Allow multiple players to sleep in one bed! :3",
+  "authors": ["zastix"],
+  "contact": {
+    "homepage": "https://zastix.club/",
+    "email": "zastix@zastix.club"
+  },
+  "license": "MIT",
+  "icon": "assets/sleeptogether/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "club.zastix.sleeptogether.Sleeptogether"
+    ]
+  },
+  "mixins": [
+    "sleeptogether.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
