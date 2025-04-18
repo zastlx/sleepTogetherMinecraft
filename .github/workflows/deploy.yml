@@ -20,3 +20,10 @@ jobs:
           uses: gradle/actions/setup-gradle@v4
         - name: Build with Gradle
           run: ./gradlew build
+        - name: Create the release
+          uses: elgohr/Github-Release-Action@v5
+          env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            title: Release ${{ github.sha }}
+            workdir: build/libs
